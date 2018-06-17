@@ -34,3 +34,14 @@ for i in my_list:
 #Break statements can not be used in LC
 def oddNumbersBeforeZero(sequence):
     return sum([1 if n%2==1  elif n==0 break for n in sequence])
+#Mode of List
+ def arrayMode(sequence):
+    d= {}
+    for i in sequence:
+        if i in d:
+            d[i]+=1
+        else:
+            d[i]=1
+    a= sorted(d,key = d.get)
+    return a[-1]
+
